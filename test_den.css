@@ -1,0 +1,246 @@
+/*
+ * Lioden Custom Den CSS - Test Script based on Vyjalo's Style
+ * Designed to mimic the structure and aggressive overriding (using !important)
+ * Color Palette: Deep Purples and Pinks
+ *
+ * To use:
+ * 1. Save this code as a .css file (e.g., my_test_den.css)
+ * 2. Upload it to a public web hosting service (e.g., GitHub Pages, Dropbox direct link)
+ * 3. Replace 'YOUR_BACKGROUND_IMAGE_URL_HERE' with the actual URL of your hosted image.
+ * 4. In your Lioden den's "Territory Description" HTML area, add this line at the very top:
+ *    <link rel="stylesheet" type="text/css" href="YOUR_HOSTED_CSS_FILE_URL_HERE" />
+ *    (Replace 'YOUR_HOSTED_CSS_FILE_URL_HERE' with the direct URL to your uploaded CSS file)
+ * 5. Add custom HTML (like the .box1, .box2, .box3 examples below) to see their effects.
+ */
+
+/* ================== Global Body Background ================== */
+body {
+    background: url('YOUR_BACKGROUND_IMAGE_URL_HERE'); /* <<< REPLACE THIS URL! */
+    background-attachment: fixed;
+    background-size: cover; /* Changed from 100% to cover for better image scaling */
+    color: white; /* Default text color for the body, adjust if your image is light */
+}
+
+/* ================== Text Colors ================== */
+h1, h2, h3 {
+    color: #F0E6FF !important; /* Lavender Blush for headers */
+}
+
+a:link, a:visited {
+    color: #4B0082 !important; /* Indigo for links */
+}
+
+a:hover, a:active {
+    color: white !important;
+    transition: all ease 0.5s; /* Faster transition for hover */
+}
+
+/* ================== Table & Panel Backgrounds/Borders ================== */
+td, td.right, td.left, .right_odd, .cave-grid {
+    background: #e0b0ff !important; /* Light Lavender for main content cells */
+    color: black !important;
+}
+
+th, td.top, td.bottom, div.left {
+    background: #8A2BE2 !important; /* Blue-Violet for headers/footers of tables and left divs */
+    color: white !important; /* White text for contrast */
+}
+
+td.left.b.center, td.right_cub {
+    background: #F0E6FF !important; /* Lavender Blush for specific centered cells */
+    color: black !important;
+}
+
+.panel {
+    box-shadow: none !important;
+    border: 1px solid #4B0082 !important; /* Indigo border */
+    background: #F0E6FF !important; /* Lavender Blush background */
+    border-radius: 15px;
+    color: black !important;
+}
+
+table.table {
+    border: 1px solid #4B0082 !important; /* Indigo border for all tables */
+    border-radius: 15px; /* Apply rounded corners to tables */
+    overflow: hidden; /* Ensures content respects rounded corners */
+}
+
+/* ================== Navigation & Sidebar ================== */
+.sidebar, .navbar {
+    background: #8A2BE2 !important; /* Blue-Violet for sidebar and navbar */
+    color: white !important; /* White text for contrast */
+}
+
+.navbar {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; /* Added for more dynamic shape */
+}
+
+.sidebar {
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px; /* Added for more dynamic shape */
+    border-left: 1px solid #4B0082; /* Indigo border */
+    text-align: justify;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white !important; /* White text for navbar links */
+    transition: all ease 0.3s;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    background: #C71585; /* Medium Violet Red on hover */
+    color: white !important; /* Keep text white on hover */
+}
+
+/* ================== Utility Classes & Components ================== */
+.xsmall {
+    background: none !important; /* Clear background for tiny text elements */
+}
+
+.chat_light {
+    background: #F0E6FF !important; /* Lavender Blush for light chat rows */
+    color: black !important;
+}
+
+.chat_dark {
+    background: #E0B0FF !important; /* Light Lavender for dark chat rows */
+    color: black !important;
+}
+
+.topbar, .breadcrumb {
+    background: #F0E6FF !important; /* Lavender Blush for top bar and breadcrumb */
+    color: black !important;
+    border-radius: 10px; /* Slight rounding */
+}
+
+.breadcrumb > .active {
+    color: #4B0082 !important; /* Indigo for active breadcrumb item */
+}
+
+/* ================== Buttons & Inputs ================== */
+input[type="submit"], input[type="button"] {
+    color: white;
+    background: #C71585; /* Medium Violet Red for buttons */
+    border: 2px solid #4B0082; /* Indigo border */
+    box-shadow: none;
+    text-shadow: none;
+    transition: all ease 0.5s;
+    border-radius: 15px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    background: #FFB6C1; /* Light Pink on hover */
+    color: black;
+    border: 2px solid #4B0082;
+}
+
+input[type="text"], input[type="password"] {
+    background: #C71585; /* Medium Violet Red for inputs */
+    color: white; /* White text within inputs */
+    border: 1px solid #4B0082;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    background: #F0E6FF; /* Lavender Blush on focus */
+    color: black; /* Black text on focus */
+    border: 1px solid #4B0082;
+}
+
+textarea {
+    background: #C71585; /* Medium Violet Red for textareas */
+    color: white;
+    border: 1px solid #4B0082;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+}
+textarea:focus {
+    background: #F0E6FF; /* Lavender Blush on focus */
+    color: black;
+}
+
+select {
+    background: #E0B0FF; /* Light Lavender for select dropdowns */
+    color: black;
+    transition: all ease 0.5s;
+    border: 1px solid #4B0082; /* Added border for consistency */
+    border-radius: 5px; /* Slightly rounded */
+}
+
+/* ================== Progress Bars ================== */
+.progress-bar-warning, .progress-bar-danger, .progress-bar-success, .progress-bar {
+    background: #9932CC !important; /* Dark Orchid for progress bars */
+}
+
+.progress {
+    background: #F0E6FF !important; /* Lavender Blush for progress bar background track */
+    border: 1px solid #4B0082; /* Indigo border */
+    border-radius: 15px;
+}
+.progress div {
+    color: black; /* Black text for progress bar labels */
+}
+
+/* ================== Main Content Container ================== */
+div.container.main {
+    background: #F0E6FF; /* Lavender Blush for the main content area */
+    box-shadow: none;
+    border: 2px solid #4B0082; /* Indigo border */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px; /* Made all corners rounded */
+}
+
+div.col-md-9.col-xs-12 {
+    background: none; /* Remove background on inner column if already covered by main container */
+    border: none;
+    border-top: 2px solid #4B0082; /* Top border for content area */
+}
+
+/* ================== Item Boxes/Headers (Less impact usually on den) ================== */
+.item {
+    border: none !important;
+}
+/* You can define specific styles for .item-footer, .item-header if needed */
+/* .item-footer { background: #yourColor; color: #yourTextColor; } */
+/* .item-header { background: #yourColor; color: #yourTextColor; } */
+
+
+/* ================== Custom Den Divs (Hover Effects) ================== */
+div.cavebox { /* Example of a specific pre-existing ID */
+    background: #4B0082 !important; /* Indigo background */
+    color: white !important;
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 500px; /* Optional: limit max width */
+    height: 100px; /* Changed from 200px to be less demanding */
+    overflow: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+div.box1, div.box2, div.box3 {
+    text-align: center;
+    color: black;
+    width: 100%;
+    max-width: 500px; /* Keep consistent max width */
+    height: 50px; /* Initial collapsed height */
+    border: 2px solid #4B0082; /* Indigo border */
+    transition: all ease 0.7s; /* Smoother transition */
+    border-radius: 15px;
+    overflow: hidden; /* Hide overflow initially */
+    margin: 10px auto; /* Center with margin */
+    padding: 10px; /* Add some padding */
+    box-sizing: border-box; /* Include padding/border in width/height */
+}
+
+div.box1 { background: #C71585; } /* Medium Violet Red */
+div.box2 { background: #EADDFF; } /* Very Light Purple / Lavender */
+div.box3 { background: #E0B0FF; } /* Light Lavender */
+
+.box1:hover, .box2:hover, .box3:hover {
+    height: 255px; /* Expanded height on hover */
+    overflow: auto; /* Show scrollbar if content exceeds height */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow on hover */
+}
