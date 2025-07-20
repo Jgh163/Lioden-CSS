@@ -1,8 +1,7 @@
-/*
- * Lioden Custom Den CSS - Ultra Simple Test
- * This script only attempts to change the body background color.
- */
-
-body {
-    background-color: black !important; /* Force the background to be black */
+body
+{
+background:url('https://dl.dropbox.com/s/92nwcbj8ii17cyg/WP_20160418_17_36_39_Pro.jpg');
+background-attachment:fixed;
+background-size:100%;
+color:black;
 }
