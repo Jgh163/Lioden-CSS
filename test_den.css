@@ -1,7 +1,197 @@
+/*Coding by Blackthorn #5838/Darklily #5809. 
+Background photo was taken by Blackthorn/Darklily as well.
+*/
+
 body
 {
 background:url('https://dl.dropbox.com/s/92nwcbj8ii17cyg/WP_20160418_17_36_39_Pro.jpg');
 background-attachment:fixed;
 background-size:100%;
 color:black;
+}
+
+h1, h2, h3{
+color:black!important;
+}
+
+td, td.right, td.left, .right_odd, .cave-grid {
+background:#efaef1!important;
+color:black!important;
+}
+
+th, td.top, td.bottom, div.left  {
+background:#c0456d!important;
+color:black!important;
+}
+
+td.left.b.center, td.right_cub {
+background:#fcbcbc!important;
+color:black!important;
+}
+
+a:link, a:visited {
+color:black!important;
+}
+
+a:hover, a:active {
+color:white!important;transition:all ease 2s;
+}
+
+.sidebar, .navbar {
+background:#c0456d!important;
+color:black!important;
+}
+
+.navbar {border-top-right-radius:15px;}
+
+.sidebar {border-bottom-right-radius:15px;border-left:1px solid black;text-align:justify;}
+
+.navbar-default .navbar-nav > li > a {color:black!important;}
+.navbar-default .navbar-nav > li > a:hover {background:#fcbcbc;transition:all ease 3s;}
+
+.xsmall {background:none;}
+
+.panel {box-shadow:none!important;border:1px solid black!important;background:#fcbcbc!important;border-radius:15px;color:black!important;}
+
+.chat_light {
+background:#fce0ed!important;
+color:black!important;
+}
+
+.chat_dark {
+background:#efaef1!important;
+color:black!important;
+}
+
+.topbar, .breadcrumb {background:#fcbcbc!important;color:black!important;}
+
+.breadcrumb > .active {color:white!important;}
+
+input[type="submit"], input[type="button"] {
+color:black;
+background:#ed89c2;
+border:2px solid black;
+box-shadow:none;
+text-shadow:none;
+transition:all ease 1s;
+border-radius:15px;}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+color:black;
+background:#fce0ed;
+border:2px solid black;
+box-shadow:none;
+text-shadow:none;
+border-radius:15px;}
+
+.progress-bar-warning, .progress-bar-danger, .progress-bar-success, .progress-bar {background:#efaef1!important;}
+.progress {background:#fce0ed!important;border:1px solid black;border-radius:15px;}
+.progress div {color:black;}
+
+table.table {border:1px solid black!important;}
+
+input[type="text"]{color:black;}
+input[type="password"] {color:black;}
+textarea {color:black;}
+select {color:black;}
+
+div.container.main 
+{
+background:#fce0ed;
+box-shadow:none;
+border:2px solid black;
+border-top-right-radius:15px;
+border-bottom-right-radius:15px;
+border-bottom-left-radius:15px;
+}
+
+div.col-md-9.col-xs-12 {background:none;border:none;border-top:2px solid black;}
+
+.item {border:none!important;}
+.item-footer {background:#;color:;}
+.item-header {background:#;color:;}
+
+input[type="text"] {background:#ed89c2;color:black;border:1px solid black;transition:all ease 1s;border-radius:15px;}
+input[type="text"]:focus {background:#fce0ed;color:black;border:1px solid black;transition:all ease 1s;border-radius:15px;}
+input[type="password"] {background:#ed89c2;color:black;border:1px solid black;transition:all ease 1s;border-radius:15px;}
+input[type="password"]:focus {background:#fce0ed;color:black;border:1px solid black;transition:all ease 1s;border-radius:15px;}
+
+textarea {background:#ed89c2;color:black;border:1px solid black;transition:all ease 1s;}
+textarea:focus {background:#fce0ed;color:black;border:1px solid black;transition:all ease 1s;}
+
+select {background:#fce0ed;color:black;transition:all ease 1s;}
+
+div.cavebox {background:black!important;color:white!important;width:500px;height:200px;overflow:auto;}
+
+
+div.box1 {
+background:#c0456d;
+text-align:center;
+color:black;
+width:500px;
+height:50px;
+border:2px solid black;
+transition:all ease 2s;
+border-radius:15px;
+overflow:hidden;
+}
+
+.box1:hover {
+background:#c0456d;
+text-align:center;
+color:black;
+width:500px;
+height:255px;
+border:2px solid black;
+transition:all ease 2s;
+border-radius:15px;
+overflow:auto;
+}
+
+div.box2 {
+background:#fce0ed;
+text-align:center;
+color:black;
+width:500px;
+height:50px;
+border:2px solid black;
+transition:all ease 2s;
+border-radius:15px;
+overflow:hidden;
+}
+
+.box2:hover {
+background:#fce0ed;
+text-align:center;
+color:black;
+width:500px;
+height:255px;
+border:2px solid black;
+transition:all ease 2s;
+border-radius:15px;
+overflow:auto;
+}
+
+div.box3 {
+background:#efaef1;
+text-align:center;
+color:black;
+width:500px;
+height:50px;
+border:2px solid black;
+transition:all ease 2s;
+border-radius:15px;
+overflow:hidden;
+}
+
+.box3:hover {
+background:#efaef1;
+text-align:center;
+color:black;
+width:500px;
+height:255px;
+border:2px solid black;
+transition:all ease 2s;
+border-radius:15px;
+overflow:auto;
 }
