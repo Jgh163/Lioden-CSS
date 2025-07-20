@@ -1,68 +1,8 @@
 /*
- * Lioden Custom Den CSS - Simple Test Script
- * This script sets the background to black and adjusts text and element colors for visibility.
+ * Lioden Custom Den CSS - Ultra Simple Test
+ * This script only attempts to change the body background color.
  */
 
-/* Global body background */
 body {
-    background-color: black; /* Sets the entire background to black */
-    color: white; /* Changes all default text to white */
-}
-
-/* Header colors */
-h1, h2, h3 {
-    color: #FFD700 !important; /* Gold color for headers */
-}
-
-/* Link colors */
-a:link, a:visited {
-    color: #00FF00 !important; /* Bright green for links */
-}
-
-a:hover, a:active {
-    color: #FF4500 !important; /* Orange-red when hovering over links */
-}
-
-/* Table background colors */
-td, th {
-    background-color: #333333 !important; /* Dark gray for table cells */
-    color: white !important; /* White text in table cells */
-}
-
-/* Panel background colors */
-.panel {
-    background-color: #222222 !important; /* Slightly lighter gray for panels */
-    color: white !important;
-}
-
-/* Sidebar and Navbar */
-.sidebar, .navbar {
-    background-color: #444444 !important; /* Medium gray for sidebar and navbar */
-    color: white !important;
-}
-
-/* Buttons */
-input[type="submit"], input[type="button"] {
-    background-color: #FF69B4; /* Hot pink for buttons */
-    color: black !important; /* Black text on buttons */
-    border: 1px solid #FFD700; /* Gold border */
-    border-radius: 5px; /* Slightly rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-input[type="submit"]:hover, input[type="button"]:hover {
-    background-color: #FF1493; /* Deeper pink on hover */
-}
-
-/* Input fields */
-input[type="text"], input[type="password"], textarea, select {
-    background-color: #555555; /* Dark gray for input fields */
-    color: white; /* White text in input fields */
-    border: 1px solid #FFD700; /* Gold border for inputs */
-    border-radius: 5px; /* Slightly rounded corners */
-}
-
-input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
-    background-color: #777777; /* Lighter gray on focus */
-    border-color: #FF1493; /* Change border color on focus */
+    background-color: black !important; /* Force the background to be black */
 }
